@@ -1,0 +1,75 @@
+body {
+  background-color: #2a2a30;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#title {
+  margin-bottom: 0;
+}
+
+#img-div {
+  width: auto;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a2a20;
+  border-radius: 15px;
+}
+
+#image {
+  width: 50%;
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+#img-caption {
+  padding: 10px;
+}
+
+#tribute-infodiv {
+  padding: 10px;
+}
+
+#tribute-info {
+  margin-left: 25px;
+}
+
+#tribute-link {
+  color: white;
+  text-decoration: none;
+}
+
+#tribute-link:hover {
+  color: yellow;
+}
+
+#tribute-year {
+  margin: 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a2a20;
+  border-radius: 15px;
+}

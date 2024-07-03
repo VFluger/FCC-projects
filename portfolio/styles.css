@@ -1,0 +1,92 @@
+#navbar {
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5vw;
+}
+
+#navbar ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+main {
+    margin-top: 8vh;
+}
+
+#welcome-section {
+    text-align: center;
+    height: 100vh;
+}
+
+#welcome-section h1 {
+    color: black;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+#welcome-section p {
+    color: gray;
+    font-weight: lighter;
+    margin: 0;
+}
+
+#projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.project-tile {
+    width: 400px;
+}
+
+.project-tile img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+figcaption {
+    margin-top: 10px;
+}
+
+.profile-link {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media only screen and (max-width: 500px) {
+    #projects {
+        flex-direction: column;
+    }   
+}

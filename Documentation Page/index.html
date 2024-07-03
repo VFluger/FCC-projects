@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Documentation Page - FCC</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>JavaScript begginer documentation</header>
+      <a href="#Basics" class="nav-link">Basics</a>
+      <a href="#Conditionals" class="nav-link">Conditionals</a>
+      <a href="#Promises" class="nav-link">Promises</a>
+      <a href="#JavaScript_for_web" class="nav-link">JavaScript for web</a>
+      <a href="#Conclusion" class="nav-link">Conclusion</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Basics">
+        <header><h2>Basics</h2></header>
+        <p>
+          ok so you have the variables. Const = constant meaning the variable
+          cannot be reassigned. Let => can be reassinged. And the var which no
+          one uses...
+        </p>
+        <code
+          >var cactus = "me"; let cactusCount = 100; var cactusNames = ['me',
+          'you'];
+        </code>
+        <p>
+          Then the variable types. We have string, which is just a name or some
+          words. Then int, float and stuff, that's basically just numbers. And
+          the arrays which is like a list containing multiple other variables.
+          Then there's the object, but that's too complex to describe over
+          here...
+        </p>
+      </section>
+      <section class="main-section" id="Conditionals">
+        <header><h2>Conditionals</h2></header>
+        <p>alright the conditionals...</p>
+        <code
+          >If (cactus === 'best things ever') { console.log('cactus is best
+          things ever'); }else { console.log('cactus is not best things ever
+          :('); }</code
+        >
+        <p>
+          you can use a if else statement. Which will do anything in the {} as
+          long as the condition in () is equal to true. And the Else is for what
+          to do when the condition is equal to False. You don't need else
+          statement if you don't need it.
+        </p>
+      </section>
+      <section class="main-section" id="Promises">
+        <header><h2>Promises</h2></header>
+        <p>
+          Pretty easy. If you have a function or some kind of action, that could
+          take some unknown time and that could throw an error, then you should
+          use a promise. You can declare a promise by using the new operator.
+          Use resolve or any call sign in the func args.
+        </p>
+        <code
+          >const mypromise = new Promise((resolve, reject) => { setTimeout(()=>
+          { resolve('foo'); }, 300); });</code
+        >
+        <p>
+          You can use await or .then(), .catch(). Await can only work in async
+          function... Then is what will be run, when the promise is resolved.
+          Catch is used to handle errors... Be carefull, you need to use
+          function in the .then or .catch
+        </p>
+        <code
+          >mypromise.then((resolveValue)=> { console.log(resolveValue); })</code
+        >
+      </section>
+      <section class="main-section" id="JavaScript_for_web">
+        <header><h2>JavaScript for web</h2></header>
+        <p>Alrighty easy peasy</p>
+        <code>document.querySelector('#mamamia').style.color = "white";</code>
+        <p>
+          querySelector is selecting an element which you give into the string
+          like in css. Then you can use the .style and a css property or how
+          it's called. You get the idea right?
+        </p>
+        <p>
+          There's probably much more to JS for web, but this is easy and I don't
+          know much more soo...
+        </p>
+      </section>
+      <section class="main-section" id="Conclusion">
+        <header><h2>Conclusion</h2></header>
+        <label for="types">Types of variables in JS</label>
+        <ul id="types">
+          <li>String - ""</li>
+          <li>Number - 123</li>
+          <li>Array - []</li>
+          <li>Object - {}</li>
+        </ul>
+        <label for="promise stuff">Conditionals in JS</label>
+        <ul id="promise stuff">
+          <li>new Promise()</li>
+          <li>await promise (only in async)</li>
+          <li>.then() for what to do when promise is resolved</li>
+          <li>.catch() for what to do when promise throwed an error</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

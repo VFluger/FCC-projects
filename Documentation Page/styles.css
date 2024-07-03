@@ -1,0 +1,10 @@
+@media (min-width: 768px) {
+  .navbar {
+    width: 20vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    float: left;
+  }
+}

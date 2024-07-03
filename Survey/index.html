@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Do you like cactuses? - Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 id="title">Do you like cactuses? - Survey</h1>
+    <p id="description">
+      Are you a lover of these spikey plants? Tell us your opinion!
+    </p>
+    <!-- form element to start writting a form. action is the html to sent the form to and method -->
+    <form action="" method="post" id="survey-form">
+      <!-- label for asking questions with for attribute set to the id of input -->
+      <label id="name-label" for="name"
+        >Your beautiful name:
+        <!-- input with attributes like required, placeholder and name that will be sent to the action. -->
+        <input
+          required
+          id="name"
+          name="name"
+          type="text"
+          placeholder="Your first name and last name"
+        />
+      </label>
+      <label id="email-label" for="email"
+        >Your magnificent email:
+        <!-- attribute type is email -->
+        <input
+          required
+          id="email"
+          name="email"
+          type="email"
+          placeholder="yourmail@gmail.com"
+        />
+      </label>
+      <label id="number-label" for="number"
+        >No. of Cactuses at home:
+        <!-- you can set max and min for number input -->
+        <input
+          id="number"
+          min="1"
+          max="100"
+          name="number"
+          type="number"
+          placeholder="1-100"
+        />
+      </label>
+      <label for="dropdown"
+        >Your favorite cactus type:
+        <!-- select with option nested for a dropdown menu, need to have value attribute -->
+        <select id="dropdown">
+          <option value="none">(select one)</option>
+          <option value="big">The big one</option>
+          <option value="small">The small one</option>
+        </select>
+      </label>
+      <label id="juice">Do you like cactus juice?</label>
+      <label for="juiceLove"
+        >Love it!
+        <!-- type set to radio for radio button, need to have same name for multiple radio buttons. value also needed-->
+        <input checked id="juiceLove" type="radio" name="juice" value="Love" />
+      </label>
+      <label for="juiceHate"
+        >I Hate it!
+        <input id="juiceHate" type="radio" name="juice" value="Hate" />
+      </label>
+      <fieldset>
+        <legend id="checkbox">Which of the following do you like?</legend>
+        <label for="checkbox1"
+          >Cactus hair
+          <!-- type of checkbox and needs a value -->
+          <input id="checkbox1" type="checkbox" value="1" /> </label
+        >Cactus plants
+        <label for="checkbox2">
+          <input id="checkbox2" type="checkbox" value="2" /> </label
+        >Cactus gaming
+        <label for="checkbox3">
+          <input id="checkbox3" type="checkbox" value="3" /> </label
+        >Cactus coding
+        <label for="checkbox4">
+          <input id="checkbox4" type="checkbox" value="4" /> </label
+        >Cactus life style
+        <label for="checkbox5">
+          <input id="checkbox5" type="checkbox" value="5" />
+        </label>
+      </fieldset>
+      <label for="comment"
+        >Describe your relationship with cactuses:
+        <!-- textarea element for a bigger box and the option to expand. rows adn cols attributes for default size -->
+        <textarea id="comment" rows="3" cols="30">
+I love all cactuses...</textarea
+        >
+      </label>
+      <!-- input type of submit for a submit button -->
+      <input id="submit" name="submit" type="submit" />
+    </form>
+  </body>
+</html>
