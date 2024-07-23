@@ -41,3 +41,8 @@ const showHint = () => {
 };
 
 submitButton.addEventListener("click", displayAnswer);
+window.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    displayAnswer();
+  }
+});
