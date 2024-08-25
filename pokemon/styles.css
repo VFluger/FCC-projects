@@ -1,0 +1,152 @@
+@font-face {
+  font-family: PokemonClassic;
+  src: url("Pokemon\ Classic.ttf");
+}
+
+:root {
+  font-size: 1.1rem;
+  font-family: "PokemonClassic";
+}
+
+body {
+  background-color: #131a22;
+  color: rgb(255, 206, 159);
+}
+
+h1 {
+  text-align: center;
+}
+
+.input-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-input {
+  background-color: transparent;
+  font-size: 1.3rem;
+  border: none;
+  color: white;
+}
+
+#search-button {
+  background-color: transparent;
+  border: none;
+  & svg {
+    width: 20px;
+    position: relative;
+    top: 1px;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.input-border {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0.5rem;
+  display: inline;
+  padding: 5px;
+  position: relative;
+  z-index: 1;
+  background-color: #131a22;
+}
+
+.autocomplete {
+  width: 300px;
+  height: 1px;
+  opacity: 0;
+  position: relative;
+  top: -5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+}
+
+.autocomplete a {
+  height: auto;
+  opacity: 0;
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  color: white;
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #f7c505;
+  }
+}
+
+.pokemon-div {
+  visibility: hidden;
+  display: inline-block;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 1rem;
+}
+
+.loading-div {
+  margin: 0 auto;
+}
+
+.center-pokemon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.center-pokemon h2 {
+  margin: 0;
+}
+
+td {
+  padding-left: 20px;
+}
+
+.pokemon-id-wrapper {
+  margin: 0;
+}
+
+.bio {
+  margin-top: 0;
+}
+
+#types {
+  margin-bottom: 10px;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+table {
+  margin-top: 15px;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes autocompleteHeight {
+  0% {
+    height: 1px;
+  }
+  100% {
+    height: auto;
+  }
+}
